@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - uZuri Skincare Clinic</title>
+  <meta name="description" content="Learn about uZuri Skincare Clinic — our history, mission, vision, and team.">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+
+  <style>
+    /* About-page-specific styles only */
+    .about-hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2a2010 60%, #3a2d0f 100%);
+      padding: 80px 24px 72px;
+      text-align: center;
+    }
+    .about-hero__label {
+      display: inline-block;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.4);
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .about-hero h1 {
+      color: var(--white);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 14px;
+    }
+    .about-hero p {
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .about-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 24px 40px;
+    }
+    .about-content h2 {
+      color: var(--gold-dark);
+      font-size: 1.4rem;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+    }
+    .about-content p {
+      color: var(--mid);
+      line-height: 1.85;
+      font-size: 0.95rem;
+    }
+    .about-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 48px 0 0;
+    }
+    .stat-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      flex: 1 1 180px;
+      min-width: 160px;
+    }
+    .stat-card__number {
+      font-size: 2.2rem;
+      font-family: Georgia, serif;
+      color: var(--gold);
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-card__label {
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+    .about-image {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin: 40px 0;
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 600px) {
+      .about-stats { gap: 12px; }
+      .stat-card { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────── -->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html" class="logo">uZuri Skincare Clinic</a>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./services.html" class="submenu-toggle" aria-haspopup="true">Services ▾</a>
+          <ul class="submenu">
+            <li><a href="./services.html#consultation">Consultation</a></li>
+            <li><a href="./services.html#facial">Facial Treatments</a></li>
+            <li><a href="./services.html#chemical-peel">Chemical Peels</a></li>
+            <li><a href="./services.html#iv-therapy">IV Therapy</a></li>
+            <li><a href="./services.html#massage">Massage Therapy</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html" class="active">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────── -->
+  <header class="about-hero" role="banner">
+    <div class="about-hero__label">Our Story</div>
+    <h1>About uZuri Skincare Clinic</h1>
+    <p>Looking to enhance your health, boost your energy levels, and replenish your skin? You have come to the right place.</p>
+  </header>
+
+  <!-- ── STATS ─────────────────────────────────── -->
+  <section style="background:var(--light-bg);padding:48px 24px 0;" aria-label="Clinic highlights">
+    <div class="about-stats" style="max-width:860px;margin:0 auto;">
+      <div class="stat-card">
+        <div class="stat-card__number">2024</div>
+        <div class="stat-card__label">Year Founded</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__number">1</div>
+        <div class="stat-card__label">Branch Location</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__number">6+</div>
+        <div class="stat-card__label">Treatments Offered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__number">2025</div>
+        <div class="stat-card__label">Aesthetic Medicine Award</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAIN CONTENT ───────────────────────────── -->
+  <main class="about-content">
+
+    <h2>Our History</h2>
+    <p>uZuri Skincare Clinic was established in 2024 in Richardsbay, KwaZulu-Natal, South Africa. Founded by Siphesihle Madlala, a young skincare specialist with the vision to offer luxury skincare treatments at an affordable price. The clinic began as a small aesthetic practice specialising in facials and acne treatments and has since expanded to include chemical peels, microneedling, laser therapy, and advanced anti-aging treatments.</p>
+    <p>The business is currently located at Junction 12 Shopping Centre, Bullion Blvd, Richardsbay Central. In 2025, uZuri Skincare Clinic was recognised at the Aesthetic Medicine Awards as the most innovative upcoming female-owned beauty clinic. That same year, uZuri collaborated with L'Oréal to create a new range focusing on quality skincare products for people with conditions such as eczema. uZuri Skincare Clinic is a proud member of the Dermatology Society of South Africa (DASSA).</p>
+
+    <img class="about-image" src="./Images/look flawless at uZuri.webp" alt="uZuri Skincare Clinic">
+
+    <h2>Our Mission</h2>
+    <p>To provide quality skincare treatments at an affordable price, making luxury skincare accessible to everyone regardless of their budget.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a world where everyone has access to skincare treatments at an affordable price. Everyone deserves to look and feel good. At uZuri we plan on making skincare treatment accessible to all. Our focus is not only enhancing individual beauty, but also empowering the youth and creating job opportunities within our community.</p>
+
+    <h2>Our Team</h2>
+    <p>We are a group of qualified skincare specialists and credible registered nurses. We are passionate about our craft and believe in providing only the highest quality skincare services. Our team stays up to date with the latest techniques and products to ensure you receive the best possible care.</p>
+
+    <!-- CTA -->
+    <div style="text-align:center;margin-top:48px;">
+      <a href="./contact.html" class="button" style="padding:14px 36px;font-size:1rem;">Book a Consultation</a>
+    </div>
+
+  </main>
+
+  <!-- ── TOAST ─────────────────────────────────── -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">
+      <h2>uZuri Skincare Clinic</h2>
+      <p>Get affordable quality skincare treatments at uZuri Skincare Clinic. Experience Luxury at an affordable price.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 Junction 12 Shopping Centre Bullion Blvd, Richardsbay Central</p>
+      <p>📞 076 457 7441</p>
+      <p>✉️ info@uzuriskincare.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

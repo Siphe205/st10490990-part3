@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>uZuri Skincare Clinic</title>
+  <meta name="description" content="Explore the range of skincare services at uZuri Skincare Clinic." />
+  <meta name="keywords" content="skincare, beauty treatments, facial treatments, skincare clinic, uZuri" />
+  <meta name="author" content="uZuri Skincare Clinic" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.uzuriskincare.com/services.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "uZuri Skincare Clinic Services",
+    "url": "https://www.uzuriskincare.com/services.html",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Skincare Consultation" },
+      { "@type": "ListItem", "position": 2, "name": "Facial Treatments" },
+      { "@type": "ListItem", "position": 3, "name": "Chemical Peels" },
+      { "@type": "ListItem", "position": 4, "name": "Intravenous Therapy" },
+      { "@type": "ListItem", "position": 5, "name": "Massage Therapy" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="./css/services.css">
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────── -->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html" class="logo">uZuri Skincare Clinic</a>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./services.html" class="active submenu-toggle" aria-haspopup="true">Services ▾</a>
+          <ul class="submenu">
+            <li><a href="#consultation">Consultation</a></li>
+            <li><a href="#facial">Facial Treatments</a></li>
+            <li><a href="#chemical-peel">Chemical Peels</a></li>
+            <li><a href="#iv-therapy">IV Therapy</a></li>
+            <li><a href="#massage">Massage Therapy</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO BANNER ──────────────────────────── -->
+  <header class="services-hero" role="banner">
+    <div class="services-hero__inner">
+      <p class="services-hero__label">What We Offer</p>
+      <h1 class="services-hero__title">Our Services</h1>
+      <p class="services-hero__sub">Get quality skincare treatments at an affordable price.</p>
+      <a href="./Contact.html" class="button hero-cta">Make a Booking</a>
+    </div>
+  </header>
+
+  <!-- ── FILTER TABS ───────────────────────────── -->
+  <section class="filter-section" aria-label="Filter services">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="consultation">Consultation</button>
+      <button class="filter-btn" data-filter="facial">Facials</button>
+      <button class="filter-btn" data-filter="chemical-peel">Chemical Peels</button>
+      <button class="filter-btn" data-filter="iv-therapy">IV Therapy</button>
+      <button class="filter-btn" data-filter="massage">Massage</button>
+    </div>
+  </section>
+
+  <!-- ── SERVICES GRID ─────────────────────────── -->
+  <main class="services-main" id="services">
+
+    <!-- 1. Skincare Consultation -->
+    <article class="service-card" data-category="consultation" id="consultation" aria-label="Skincare Consultation service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/consultation.webp" alt="Skincare consultation at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge">Essential First Step</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">🔬</div>
+        <h2>Skincare Consultation</h2>
+        <p class="service-card__tagline">Personalised Skin Analysis</p>
+        <p>Every great skincare journey starts with understanding your skin. Our qualified skincare therapists perform a thorough analysis of your skin type, concerns, and lifestyle to design a tailored treatment plan just for you.</p>
+        <ul class="service-card__features">
+          <li>✔ In-depth skin type &amp; condition analysis</li>
+          <li>✔ Personalised treatment plan</li>
+          <li>✔ Product recommendations</li>
+          <li>✔ Follow-up progress tracking</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R350</strong> / session</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Facial Treatments -->
+    <article class="service-card" data-category="facial" id="facial" aria-label="Facial Treatments service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/facials.jpg" alt="Luxury facial treatment at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge service-card__badge--gold">Popular</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">✨</div>
+        <h2>Facial Treatments</h2>
+        <p class="service-card__tagline">Glow From Within</p>
+        <p>Restore radiance and hydration with our signature facial treatments. From deep-cleansing purifying facials to anti-ageing and brightening therapies, each treatment is customised to your skin's unique needs.</p>
+        <ul class="service-card__features">
+          <li>✔ Classic, hydrating &amp; anti-ageing facials</li>
+          <li>✔ Microdermabrasion &amp; skin resurfacing</li>
+          <li>✔ LED light therapy add-on available</li>
+          <li>✔ Suitable for all skin tones</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R450</strong> / session</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Chemical Peels -->
+    <article class="service-card" data-category="chemical-peel" id="chemical-peel" aria-label="Chemical Peel service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/chemicalpeel.webp" alt="Chemical peel treatment at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge">From R800</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">💧</div>
+        <h2>Chemical Peels</h2>
+        <p class="service-card__tagline">Resurface &amp; Renew</p>
+        <p>Our medical-grade chemical peels accelerate cell turnover to smooth fine lines, reduce hyperpigmentation, and treat acne scarring. Available in superficial, medium, and deep peel intensities depending on your skin goals.</p>
+        <ul class="service-card__features">
+          <li>✔ Glycolic, lactic &amp; salicylic acid options</li>
+          <li>✔ Targets acne, pigmentation &amp; ageing</li>
+          <li>✔ Series of 3 or 6 peels recommended</li>
+          <li>✔ Aftercare kit included</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R800</strong> / peel</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Intravenous Therapy -->
+    <article class="service-card" data-category="iv-therapy" id="iv-therapy" aria-label="Intravenous Therapy service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/ivtherapy.jpg" alt="Intravenous vitamin therapy at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge service-card__badge--green">Wellness Boost</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">💉</div>
+        <h2>Intravenous Therapy</h2>
+        <p class="service-card__tagline">Beauty From the Inside Out</p>
+        <p>Our IV drip treatments deliver high-dose vitamins, antioxidants, and minerals directly into the bloodstream for maximum absorption. Ideal for skin brightening, energy restoration, and immune support.</p>
+        <ul class="service-card__features">
+          <li>✔ Glutathione skin-brightening drips</li>
+          <li>✔ Vitamin C &amp; B12 booster infusions</li>
+          <li>✔ Administered by qualified practitioners</li>
+          <li>✔ Sessions take 45–60 minutes</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R1 200</strong> / session</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Massage Therapy -->
+    <article class="service-card" data-category="massage" id="massage" aria-label="Massage Therapy service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/massage.jpg" alt="Relaxing massage therapy at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge">60 &amp; 90 min options</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">🌿</div>
+        <h2>Massage Therapy</h2>
+        <p class="service-card__tagline">Relax, Restore, Recover</p>
+        <p>Ease tension and restore balance with our therapeutic massage sessions. Our experienced therapists offer Swedish relaxation, deep-tissue, hot stone, and lymphatic drainage massages tailored to your needs.</p>
+        <ul class="service-card__features">
+          <li>✔ Swedish, deep-tissue &amp; hot stone</li>
+          <li>✔ Lymphatic drainage massage</li>
+          <li>✔ Back, neck &amp; shoulder focus available</li>
+          <li>✔ Aromatherapy oils included</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R550</strong> / session</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Skin Boosters & Mesotherapy -->
+    <article class="service-card" data-category="facial" id="skin-boosters" aria-label="Skin Boosters and Mesotherapy service">
+      <div class="service-card__img-wrap">
+        <img src="./Images/dermafillers.webp" alt="Skin booster mesotherapy treatment at uZuri Skincare Clinic" loading="lazy">
+        <span class="service-card__badge service-card__badge--gold">New</span>
+      </div>
+      <div class="service-card__body">
+        <div class="service-card__icon">💎</div>
+        <h2>Skin Boosters &amp; Mesotherapy</h2>
+        <p class="service-card__tagline">Next-Level Hydration</p>
+        <p>Micro-injections of hyaluronic acid, vitamins, and skin-nourishing cocktails are delivered into the dermis to deeply hydrate, firm, and brighten the skin. Results are visible after just one session.</p>
+        <ul class="service-card__features">
+          <li>✔ Hyaluronic acid skin boosters</li>
+          <li>✔ Targets dullness, dryness &amp; fine lines</li>
+          <li>✔ Minimal downtime</li>
+          <li>✔ Performed by certified practitioners</li>
+        </ul>
+        <div class="service-card__footer">
+          <span class="service-card__price">From <strong>R1 500</strong> / session</span>
+          <a href="./Contact.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ── NO RESULTS MESSAGE ────────────────────── -->
+  <div class="no-results" id="noResults" aria-live="polite" style="display:none;">
+    <p>No services found in this category.</p>
+  </div>
+
+  <!-- ── ENQUIRY STRIP ─────────────────────────── -->
+  <section class="enquiry-strip" aria-label="Quick enquiry">
+    <div class="enquiry-strip__inner">
+      <div class="enquiry-strip__text">
+        <h2>Not sure which package suits you?</h2>
+        <p>Our team is available to assist you with any questions or to schedule a consultation.</p>
+      </div>
+      <div class="enquiry-strip__actions">
+        <a href="./Contact.html" class="button">Contact Us</a>
+        <a href="tel:+2773555-9876" class="button button--outline">📞 Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOAST NOTIFICATION ────────────────────── -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ── SCROLL TO TOP ─────────────────────────── -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">
+      <h2>uZuri Skincare Clinic</h2>
+      <p>Age backwards with uZuri Skincare Clinic</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 Junction 12 Shopping Centre Bullion Blvd,Richardsbay Central  </p>
+      <p>📞 +27 (74 457 7221)</p>
+      <p>✉️ info@uzuriskincare.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page-specific: filter tabs -->
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards      = document.querySelectorAll('.service-card');
+    const noResults  = document.getElementById('noResults');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.hidden = !match;
+          if (match) visible++;
+        });
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

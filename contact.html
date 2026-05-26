@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - uZuri Skincare Clinic</title>
+  <meta name="description" content="Get in touch with uZuri Skincare Clinic — book a treatment or ask us anything.">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────── -->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html" class="logo">uZuri Skincare Clinic</a>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./services.html" class="submenu-toggle" aria-haspopup="true">Services ▾</a>
+          <ul class="submenu">
+            <li><a href="./services.html#consultation">Consultation</a></li>
+            <li><a href="./services.html#facial">Facial Treatments</a></li>
+            <li><a href="./services.html#chemical-peel">Chemical Peels</a></li>
+            <li><a href="./services.html#iv-therapy">IV Therapy</a></li>
+            <li><a href="./services.html#massage">Massage Therapy</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HERO ─────────────────────────────── -->
+  <header class="page-header" role="banner">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you — reach out to book a session or ask any questions.</p>
+  </header>
+
+  <!-- ── CONTACT WRAPPER ───────────────────────── -->
+  <div class="contact-wrapper">
+
+    <!-- Contact detail cards -->
+    <div class="contact-info-grid">
+      <div class="contact-detail">
+        <span>📍</span>
+        <div>
+          <strong>Address</strong>
+          <p>Junction 12 Shopping Centre<br>Bullion Blvd, Richardsbay Central</p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span>📞</span>
+        <div>
+          <strong>Phone</strong>
+          <p><a href="tel:+27764577441" style="color:inherit;text-decoration:none;">076 457 7441</a></p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span>✉️</span>
+        <div>
+          <strong>Email</strong>
+          <p><a href="mailto:info@uzuriskincare.com" style="color:inherit;text-decoration:none;">info@uzuriskincare.com</a></p>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span>🕐</span>
+        <div>
+          <strong>Hours</strong>
+          <p>Mon–Fri: 9am – 6pm<br>Sat: 9am – 3pm</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="contact-form-container" role="form" aria-label="Contact form">
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" autocomplete="given-name">
+        <div class="field-error" id="fnameError"></div>
+      </div>
+
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" autocomplete="family-name">
+        <div class="field-error" id="lnameError"></div>
+      </div>
+
+      <div>
+        <label for="ename">Email Address</label>
+        <input type="email" id="ename" name="email" placeholder="Your email address" autocomplete="email">
+        <div class="field-error" id="enameError"></div>
+      </div>
+
+      <div>
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Tell us how we can help you..." style="height:180px;resize:vertical;"></textarea>
+        <div class="field-error" id="subjectError"></div>
+      </div>
+
+      <button type="button" id="submitBtn" class="button submit-btn" onclick="handleContactSubmit()">Send Message</button>
+    </div>
+
+  </div>
+
+  <!-- ── TOAST ─────────────────────────────────── -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">
+      <h2>uZuri Skincare Clinic</h2>
+      <p>Get affordable quality skincare treatments at uZuri Skincare Clinic. Experience Luxury at an affordable price.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 Junction 12 Shopping Centre Bullion Blvd, Richardsbay Central</p>
+      <p>📞 076 457 7441</p>
+      <p>✉️ info@uzuriskincare.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

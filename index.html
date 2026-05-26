@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uZuri Skincare Clinic</title>
+  <meta name="description" content="uZuri Skincare Clinic — affordable luxury skincare treatments in Richardsbay, KwaZulu-Natal.">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+  <!-- ── NAVIGATION ───────────────────────────── -->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html" class="logo">uZuri Skincare Clinic</a>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li>
+          <a href="./services.html" class="submenu-toggle" aria-haspopup="true">Services ▾</a>
+          <ul class="submenu">
+            <li><a href="./services.html#consultation">Consultation</a></li>
+            <li><a href="./services.html#facial">Facial Treatments</a></li>
+            <li><a href="./services.html#chemical-peel">Chemical Peels</a></li>
+            <li><a href="./services.html#iv-therapy">IV Therapy</a></li>
+            <li><a href="./services.html#massage">Massage Therapy</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── SLIDESHOW ─────────────────────────────── -->
+  <div class="slideshow-container carousalmargin">
+    <div class="mySlides fades">
+      <div class="numbertext"></div>
+      <img src="./Images/look flawless at uZuri.webp" alt="Look flawless at uZuri" style="height:500px;width:100%;object-fit:cover;">
+      <div class="text">Do you want to look flawless? Book a session at uZuri Skincare Clinic</div>
+    </div>
+
+    <div class="mySlides fades">
+      <div class="numbertext"></div>
+      <img src="./Images/skincare clinic.jpg" alt="Skincare clinic" style="height:500px;width:100%;object-fit:cover;">
+      <div class="text">Experience Luxury at an affordable price</div>
+    </div>
+
+    <div class="mySlides fades">
+      <div class="numbertext"></div>
+      <img src="./Images/pexels-photo-7446658.webp" alt="Skincare treatment" style="height:500px;width:100%;object-fit:cover;">
+      <div class="text">Let us take care of you at uZuri Skincare Clinic</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- ── DOTS ──────────────────────────────────── -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- ── INTRO STRIP ───────────────────────────── -->
+  <section class="enquiry-strip" style="margin-top:40px;" aria-label="Welcome">
+    <div class="enquiry-strip__inner">
+      <div class="enquiry-strip__text">
+        <h2>Welcome to uZuri Skincare Clinic</h2>
+        <p>Luxury skincare treatments at an affordable price — located in Richardsbay, KwaZulu-Natal.</p>
+      </div>
+      <div class="enquiry-strip__actions">
+        <a href="./services.html" class="button">View Services</a>
+        <a href="./contact.html" class="button button--outline">Make a Booking</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOAST ─────────────────────────────────── -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ── FOOTER ────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">
+      <h2>uZuri Skincare Clinic</h2>
+      <p>Get affordable quality skincare treatments at uZuri Skincare Clinic. Experience Luxury at an affordable price.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 Junction 12 Shopping Centre Bullion Blvd, Richardsbay Central</p>
+      <p>📞 076 457 7441</p>
+      <p>✉️ info@uzuriskincare.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and updates.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./javascript/script.js"></script>
+
+</body>
+</html>
